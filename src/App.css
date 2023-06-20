@@ -124,13 +124,13 @@
     line-height: 2rem;
     margin: 4em 3em;
   }
-  #section-cont{
+  .section-cont{
     text-align: center;
     transition: transform 0.5s ease-in-out;
-    
   }
   .section-cont.animate {
     transform: translateY(2rem); 
+    opacity: 1;
   }
   .section-title{
     color: rgb(255, 5, 5);

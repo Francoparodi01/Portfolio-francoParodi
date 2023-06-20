@@ -5,7 +5,7 @@ import VisibleComponents from './VisibleComponents'
 const Aboutme = ({isVisible}) => {
   
   return (
-    <section id='aboutme-section'>
+    <section className='aboutme-section'>
     <VisibleComponents id="section-cont" className={`section-cont ${isVisible ? 'animate' : ''}`}>
       <div className='section-cont'>
         <h2 className='section-title'>Sobre mí</h2>
