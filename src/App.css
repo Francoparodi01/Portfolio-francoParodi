@@ -30,7 +30,14 @@
     transform: translateY(0px);
   }
 }
-
+@keyframes onlyOpacity {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
 
 @media only screen and (max-width: 600px){
   .burguerMenu{
@@ -85,8 +92,7 @@
    justify-content: flex-end;
   }
   .contact-logo{
-    animation: animation 2s;
-    
+    animation: animation 2s
   }
   .text-introduction{
     font-size: 2.3em;
@@ -116,6 +122,30 @@
     align-items: center;
     text-align: initial;
     line-height: 2rem;
+    margin: 4em 3em;
+  }
+  #section-cont{
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    
+  }
+  .section-cont.animate {
+    transform: translateY(2rem); 
+  }
+  .section-title{
+    color: rgb(255, 5, 5);
+    border-bottom: 3px solid rgb(225, 0, 0);
+    font-size: var(--h2-font-size);
+    display:inline;
+  }
+  .aboutme-section{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    animation: onlyOpacity 2s;
+  }
+  .img-section-cont{
+    display: flex;
+    justify-content: center;
   }
 }
 .header{
@@ -162,12 +192,4 @@
   opacity: 1;
   transform: translateY(0);
 }
-.section-title{
-  color: rgb(255, 57, 57);
-  border-bottom: 3px solid red;
-  font-size: var(--h2-font-size);
-}
-.section-cont{
-  display: flex;
-  justify-content: center;
-}
+

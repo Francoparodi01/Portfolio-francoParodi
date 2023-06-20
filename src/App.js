@@ -8,9 +8,6 @@ function App() {
     <>
     <Header/>
     <Introduction/>
-    <div className='section-cont'>
-      <h2 className='section-title'>Sobre mí</h2>
-    </div>
     <Aboutme/>
     </>
   );
