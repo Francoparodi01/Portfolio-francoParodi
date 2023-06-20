@@ -103,6 +103,20 @@
   row-gap: 3em;
   margin-top: 75px;
   }
+  .aboutme-section{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .aboutme-grid{
+    display: grid;
+    grid-column-gap: 2rem;
+  }
+  .aboutme-cont{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: initial;
+    line-height: 2rem;
+  }
 }
 .header{
   height: var(--header-height);
@@ -150,7 +164,7 @@
 }
 .section-title{
   color: rgb(255, 57, 57);
-  border-bottom: 2px solid red;
+  border-bottom: 3px solid red;
   font-size: var(--h2-font-size);
 }
 .section-cont{

@@ -1,7 +1,7 @@
 import fotoCv from '../assets/fotoPortfolio.png'
 import ContactLogo from './ContactLogo'
 
-const Sobremi = () => {
+const Introduction = () => {
 
   return (
     <section className='home'>
@@ -18,4 +18,4 @@ const Sobremi = () => {
   )
 }
 
-export default Sobremi
+export default Introduction
