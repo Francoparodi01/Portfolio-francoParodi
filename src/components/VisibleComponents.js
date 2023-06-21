@@ -1,11 +1,12 @@
 import React,{ useEffect, useState } from 'react'
 
-const VisibleComponents = ({id, children, className}) => {
+/* const VisibleComponents = ({id, children, className}) => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
       const handleScroll = () => {
         const titleElement = document.getElementById(`${id}`);
+
   
         if (titleElement) {
           const titlePosition = titleElement.getBoundingClientRect().top;
@@ -34,12 +35,60 @@ const VisibleComponents = ({id, children, className}) => {
         titleElement.classList.remove('animate');
       }
     }, [id, isVisible]);
+    
     return(
-        <div id={id} className={`${className} ${isVisible ? 'animate' : ''}`}>
+        <div id={id} className={`${className} ${isVisible ? 'animate' : ''}`} style={{
+          opacity: isVisible ? 1 : 0,
+          transition: 'opacity 1.8s ease-in-out'
+        }}>
             {children}
         </div>
     );
 }
+*/
+const VisibleComponents = ({id, children, className}) => {
+  const [isVisible, setIsVisible] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const titleElement = document.getElementById(`${id}`);
+      
 
+      if (titleElement) {
+        const titlePosition = titleElement.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (titlePosition < windowHeight) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [id]);
+
+  useEffect(() => {
+    const titleElement = document.getElementById(`${id}`);
+
+    if (isVisible && titleElement) {
+      titleElement.classList.add('animate');
+    } else if (!isVisible && titleElement) {
+      titleElement.classList.remove('animate');
+    }
+  }, [id, isVisible]);
+  
+  return(
+    <div id={id} className={`${className} ${isVisible ? 'animate' : ''}`} style={{
+      opacity: isVisible ? 1 : 0,
+      transition: 'opacity 1.8s ease-in-out'
+    }}>
+          {children}
+      </div>
+  );
+}
 export default VisibleComponents

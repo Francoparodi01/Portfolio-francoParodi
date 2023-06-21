@@ -1,12 +1,14 @@
 import fotoCv from '../assets/fotoPortfolio.png'
 import ContactLogo from './ContactLogo'
+import VisibleComponents from './VisibleComponents'
 
-const Introduction = () => {
+const Introduction = ({isVisible}) => {
 
   return (
-    <section className='home'>
+
+      <section className='home'>
         <div className='introduction'>
-            <h3 className='text-introduction'>¡Hola! <br/>soy <span className='name-int'> Franco</span>, <br/> junior Frontend developer</h3>
+            <h3 className='text-introduction'>¡Hola! <span className="hand-emoji" role="img" aria-label="Saludo">🖐</span><br/>soy <span className='name-int'> Franco</span>, <br/> Jr. Frontend developer</h3>
         </div>
         <div className='img-homeContainer'>
             <img src={fotoCv} alt='foto mia' className='img-home'></img>
@@ -14,7 +16,8 @@ const Introduction = () => {
         <div>
         <ContactLogo/>
         </div>
-    </section>
+      </section>
+
   )
 }
 

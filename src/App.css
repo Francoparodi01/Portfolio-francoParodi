@@ -18,26 +18,21 @@
       57.3px 79.8px 73.7px -5px hsl(var(--shadow-color) / 0.85);
   --h2-font-size: 2rem;
 }
+/* Inicio keyframes */
 
-@keyframes animation { 
-  0% {
-    opacity: 0;
-    transform: translateY(-10em);
-  }
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
 
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-@keyframes onlyOpacity {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-}
+/* fin keyframes*/
+
+/* inicio mediaQuerys */
+
+/* min-width: 600px */
 
 @media only screen and (max-width: 600px){
   .burguerMenu{
@@ -55,10 +50,10 @@
     width: 16em;
     height: 16em;
     box-shadow: var(--shadow-elevation-medium)
-
+    
   }
 }
-
+/* min-width: 992px */
 @media only screen and (min-width: 992px){
   .burguerMenu{
     display: none; 
@@ -89,7 +84,7 @@
   .img-homeContainer{
     display: flex;
     align-items: center;
-   justify-content: flex-end;
+    justify-content: flex-end;
   }
   .contact-logo{
     animation: animation 2s
@@ -98,16 +93,16 @@
     font-size: 2.3em;
   }
   .home{
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
-  margin-left: 2em;
-  margin-right: 2em;
-  animation: animation 2s;
-  column-gap: 40px;
-  row-gap: 3em;
-  margin-top: 75px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin-left: 2em;
+    margin-right: 2em;
+    animation: animation 2s;
+    column-gap: 40px;
+    row-gap: 3em;
+    margin-top: 75px;
   }
   .aboutme-section{
     padding-top: 4rem;
@@ -130,7 +125,6 @@
   }
   .section-cont.animate {
     transform: translateY(2rem); 
-    opacity: 1;
   }
   .section-title{
     color: rgb(255, 5, 5);
@@ -148,6 +142,13 @@
     justify-content: center;
   }
 }
+
+
+/* fin min-width: 992px */
+
+/* estilos generales */
+
+
 .header{
   height: var(--header-height);
   width: 100%;
@@ -182,14 +183,13 @@
 .name-int{
   color: rgb(255, 57, 57);
 }
-.fade-in {
-  opacity: 0;
-  transform: translateY(-50px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+.curriculum{
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
 }
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+.hand-emoji {
+  display: inline-block;
+  animation: wave 2s infinite;
 }
 

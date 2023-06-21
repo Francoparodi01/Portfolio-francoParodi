@@ -1,6 +1,7 @@
 import React from 'react'
 import fotoCv from '../assets/fotoPortfolio.png'
 import VisibleComponents from './VisibleComponents'
+import documento from '../pdf/cv-FrancoParodi.pdf'
 
 const Aboutme = ({isVisible}) => {
   
@@ -15,8 +16,11 @@ const Aboutme = ({isVisible}) => {
                 <img src={fotoCv} alt='foto-cv' className='img-home'></img>
             </div>
             <div>
-                <h2>Franco Parodi.</h2>
-                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum</p>
+                <h2>Hola! Soy Franco Parodi,</h2>
+                    <p>Desarrollador frontend y estudiante de la carrera de Ingeniería en Informática en la UBA. Mi principal objetivo es el aprendizaje constante, 
+                      siempre buscando mejorar mis habilidades y conocimientos. Desde muy joven, he sentido una gran pasión por la tecnología, y también he desarrollado un interés por el diseño, 
+                      lo cual me ha llevado a tomar cursos de Photoshop e Illustrator. Si estás interesado en conocer más sobre mi trayectoria y experiencia, te invito a 
+                      <a href={documento} className='curriculum'> hacer clic aquí</a> para acceder a mi currículum.</p>
             </div>
         </div>
     </VisibleComponents>
