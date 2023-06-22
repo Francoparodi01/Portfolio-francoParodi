@@ -6,7 +6,7 @@ import documento from '../pdf/cv-FrancoParodi.pdf'
 const Aboutme = ({isVisible}) => {
   
   return (
-    <section className='aboutme-section'>
+    <section className='section'>
     <VisibleComponents id="section-cont" className={`section-cont ${isVisible ? 'animate' : ''}`}>
       <div className='section-cont'>
         <h2 className='section-title'>Sobre mí</h2>

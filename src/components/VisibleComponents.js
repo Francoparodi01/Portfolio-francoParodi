@@ -84,8 +84,6 @@ const VisibleComponents = ({id, children, className}) => {
   
   return(
     <div id={id} className={`${className} ${isVisible ? 'animate' : ''}`} style={{
-      opacity: isVisible ? 1 : 0,
-      transition: 'opacity 1.8s ease-in-out'
     }}>
           {children}
       </div>
