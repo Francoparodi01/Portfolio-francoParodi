@@ -17,6 +17,17 @@
       7.5px 10.5px 9.7px -2.5px hsl(var(--shadow-color) / 1),
       57.3px 79.8px 73.7px -5px hsl(var(--shadow-color) / 0.85);
   --h2-font-size: 2rem;
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: whitesmoke;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #b782ef;
+    border-radius: 10px;
+
+  }
 }
 /* Inicio keyframes */
 
@@ -186,9 +197,10 @@
   color: #b072e6
 }
 .curriculum{
-  color: #c49fd3;
+  color: #b971d6;
   font-weight: bold;
   text-decoration: none;
+  text-shadow: 0px 1px 1px black;
 }
 .hand-emoji {
   display: inline-block;
