@@ -1,7 +1,5 @@
 import fotoCv from '../assets/fotoPortfolio.png'
 import ContactLogo from './ContactLogo'
-import VisibleComponents from './VisibleComponents'
-
 const Introduction = ({isVisible}) => {
 
   return (
