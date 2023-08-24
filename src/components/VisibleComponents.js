@@ -1,21 +1,16 @@
-import React,{ useEffect, useState } from 'react'
-const VisibleComponents = ({id, children, className}) => {
+import React, { useEffect, useState, useRef } from 'react';
+
+const VisibleComponents = ({ id, children, className }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const titleElement = document.getElementById(`${id}`);
-      
-
-      if (titleElement) {
-        const titlePosition = titleElement.getBoundingClientRect().top;
+      if (elementRef.current) {
+        const titlePosition = elementRef.current.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
-        if (titlePosition < windowHeight) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
+        setIsVisible(titlePosition < windowHeight);
       }
     };
 
@@ -23,23 +18,26 @@ const VisibleComponents = ({id, children, className}) => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [id]);
+  }, []);
 
   useEffect(() => {
-    const titleElement = document.getElementById(`${id}`);
+    const titleElement = elementRef.current;
 
     if (isVisible && titleElement) {
       titleElement.classList.add('animate');
     } else if (!isVisible && titleElement) {
       titleElement.classList.remove('animate');
     }
-  }, [id, isVisible]);
-  
-  return(
-    <div id={id} className={`${className} ${isVisible ? 'animate' : ''}`} style={{
-    }}>
-          {children}
-      </div>
+  }, [isVisible]);
+
+  return (
+    <div
+      ref={elementRef}
+      className={`${className} ${isVisible ? 'animate' : ''}`}
+>
+      {children}
+    </div>
   );
-}
-export default VisibleComponents
+};
+
+export default VisibleComponents;
