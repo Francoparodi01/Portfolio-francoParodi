@@ -220,3 +220,7 @@
 .link-home{
   text-decoration: none;
 }
+.titulos-proyectos{
+  color: rgb(0, 0, 0);
+  border-bottom: 1.5px solid #824e80;
+}

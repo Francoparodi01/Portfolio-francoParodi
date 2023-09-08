@@ -1,6 +1,7 @@
 import React from 'react'
 import VisibleComponents from './VisibleComponents'
 import PlantShop from './PlantShop'
+import PrimerProyecto from './PrimerProyecto'
 
 const Portfolio = (isVisible) => {
   return (
@@ -10,12 +11,14 @@ const Portfolio = (isVisible) => {
          <div className='section-cont'>
             <h2 className='section-title'>Portfolio</h2>
         </div>
+        <p>Aca iria un texto descriptivo  </p>
     </div>
-    <div>
-      <PlantShop/>
-    </div>
+      <div>
+          <PrimerProyecto/>
+          <PlantShop/>
+      </div>
     </VisibleComponents>
-    </section>
+   </section>
   )
 }
 
