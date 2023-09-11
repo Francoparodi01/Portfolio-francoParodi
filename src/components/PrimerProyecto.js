@@ -12,11 +12,16 @@ const PrimerProyecto = () => {
       </div>
        <div>
            <h2 className='titulos-proyectos'>My shop</h2>
-             <p className='aboutme-text'>la idea en este texto es explicar el funcionamiento de la pagina, el tiempo que me llevo construirla y como está compuesta</p>
+            <p className='aboutme-text'>
+              "My Shop" fue mi primer proyecto realizado en React. De la mano de mis tutores y profesores de Coderhouse, 
+              logré completar mi primera página utilizando este framework. El sitio web cuenta con una página principal donde se muestra la lista de productos,
+              una sección filtrada por categorías y, finalmente, las tarjetas con cada producto respectivo y la pasarela de pago. 
+              El objetivo de este proyecto fue aprender a utilizar el framework y comprender sus funcionalidades. 
+              A lo largo del curso, que duró desde septiembre hasta diciembre de 2022, fui creando sus componentes, utilizando rutas y Firebase como base de datos.
+            </p>
        </div>
     </div>
     </>
   )
 }
-
 export default PrimerProyecto

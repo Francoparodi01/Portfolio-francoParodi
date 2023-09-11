@@ -2,6 +2,7 @@ import React from 'react'
 import VisibleComponents from './VisibleComponents'
 import PlantShop from './PlantShop'
 import PrimerProyecto from './PrimerProyecto'
+import ProyectoSkins from './ProyectoSkins'
 
 const Portfolio = (isVisible) => {
   return (
@@ -11,10 +12,11 @@ const Portfolio = (isVisible) => {
          <div className='section-cont'>
             <h2 className='section-title'>Portfolio</h2>
         </div>
-        <p>Aca iria un texto descriptivo  </p>
+        <p className='subtitulo-portfolio'>Mi Portafolio de Desarrollador Web, explora mis proyectos personales</p>
     </div>
       <div>
           <PrimerProyecto/>
+          <ProyectoSkins/>
           <PlantShop/>
       </div>
     </VisibleComponents>
