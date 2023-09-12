@@ -155,11 +155,13 @@
   .container-img-preview{
     display: flex;
     justify-content: center;    
+    box-shadow: var(--shadow-elevation-medium);
     border: 0.4px inset rgba(0, 0, 0, 0.267);
    }
   .img-preview{
     width: 500px;
     height: 300px;
+
   }
   .repositorio-proyectos:hover{
     color: #824e80;

@@ -17,7 +17,14 @@ const ProyectoSkins = () => {
             de mis pasiones: los videojuegos y la programación, dando como resultado una plataforma de venta de skins para el juego Counter-Strike: Global Offensive. 
             La página incluye una barra de búsqueda que permite filtrar productos por categorías y nombres, un contador de productos agregados al carrito
             y una pasarela de pago para una experiencia de compra completa.  
-             <a className='repositorio-proyectos' href='https://github.com/Francoparodi01/SkinsApp'> Link al repositorio</a>
+              <ul>
+                  <li>
+                    <a className='repositorio-proyectos' href='https://github.com/Francoparodi01/SkinsApp'> Link al repositorio</a>
+                  </li>
+                  <li>
+                    <a className='repositorio-proyectos' href='https://csgoskins-app.netlify.app'>Deploy</a>
+                  </li>
+              </ul>
             </p>
        </div>
     </div>
