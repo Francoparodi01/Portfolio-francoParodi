@@ -1,5 +1,4 @@
 import React from 'react'
-import {LuMenu} from 'react-icons/lu'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -33,13 +32,13 @@ const Header = () => {
         </nav>
     </header>
     */
-    <Navbar bg="light" data-bs-theme="light">
-    <Container>
-      <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Navbar id='nav'>
+    <Container id='header'>
+      <Navbar.Brand onClick={handleClick} >Franco Parodi</Navbar.Brand>
       <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#features">Features</Nav.Link>
-        <Nav.Link href="#pricing">Pricing</Nav.Link>
+        <Nav.Link  id='head-item'>Sobre mí</Nav.Link>
+        <Nav.Link  id='head-item'>Portfolio</Nav.Link>
+        <Nav.Link  id='head-item'>Contacto</Nav.Link>
       </Nav>
     </Container>
   </Navbar>

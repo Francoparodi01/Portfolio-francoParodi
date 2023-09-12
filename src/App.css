@@ -65,22 +65,18 @@
 }
 /* min-width: 992px */
 @media only screen and (min-width: 992px){
-  .burguerMenu{
-    display: none; 
+  #nav{
+ 
   }
-  .head-menu{
-    display: flex;
-    flex-direction: row;
-    margin-right: 10em;
-    font-size: 17px;
-  }
-  .head-item{
+  #head-item{
     color: black;
-    transition: border-bottom 0.4s ease-in;
+    transition: border-bottom 0.4s ease-in-out;
     border-bottom: 2px solid transparent;
+    margin-bottom: 10px;
   }
-  .head-item:hover{
+  #head-item:hover{
     border-bottom: 2px solid #824e80;
+    color: #824e80
   }
   .introduction{
     align-self: center;
@@ -174,16 +170,16 @@
 /* estilos generales */
 
 
-.header{
-  height: var(--header-height);
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+#header{
   background-color: #fff;
-  box-shadow:0px 5px 6px 4px rgb(0 0 0 / 20%);
-
+  box-shadow:-1px 1px 0px 0px rgb(0 0 0 / 20%);
+}
+.contact-item{
+  color: #b971d6
+}
+#vsg-contact{
+  width: 111px;
+ 
 }
 .name{
   display: flex;
@@ -223,14 +219,16 @@
   text-indent: 2rem;
 }
 
-.link-home{
+#link-home{
   text-decoration: none;
 }
 .titulos-proyectos{
   color: rgb(0, 0, 0);
   border-bottom: 1.5px solid #824e80;
+  margin-bottom: 22px;
 }
 .subtitulo-portfolio{
+  margin-top: 25px;
   opacity: 0.7
 }
 .repositorio-proyectos{
