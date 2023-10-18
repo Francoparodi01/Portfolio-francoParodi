@@ -1,6 +1,6 @@
 import React from 'react'
 import VisibleComponents from './VisibleComponents'
-import PlantShop from './PlantShop'
+import ClonDs from './ClonDs'
 import PrimerProyecto from './PrimerProyecto'
 import ProyectoSkins from './ProyectoSkins'
 
@@ -17,7 +17,7 @@ const Portfolio = (isVisible) => {
       <div>
           <PrimerProyecto/>
           <ProyectoSkins/>
-          <PlantShop/>
+          <ClonDs/>
       </div>
     </VisibleComponents>
    </section>

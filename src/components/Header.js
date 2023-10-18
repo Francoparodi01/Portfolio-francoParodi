@@ -12,26 +12,6 @@ const Header = () => {
     })}
 
   return (
-    /*<header className='header'>
-        <nav>
-            <div className='div-headerCont'>
-                <h2  className='name'>
-                    <span onClick={handleClick}>Franco Parodi</span>
-                </h2>
-                <div className='burguerMenu'>
-                    <LuMenu className='burgersvg'/>
-                </div>
-                <div className='head-menu'>
-                    <ul className='menu-ul'>
-                        <li className='head-item'>Sobre mí</li>
-                        <li className='head-item'>Portfolio</li>
-                        <li className='head-item'>Contacto</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    */
     <Navbar id='nav'>
     <Container id='header'>
       <Navbar.Brand onClick={handleClick} >Franco Parodi</Navbar.Brand>
