@@ -2,7 +2,7 @@ import React from 'react'
 import {SiGmail} from "react-icons/si"
 import {FcContacts} from "react-icons/fc"
 
-const contact = () => {
+const Contact = () => {
   return (
     <section className='aboutme-section' id='contacto'>
     <div className='section-cont'>
@@ -23,4 +23,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

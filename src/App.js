@@ -5,7 +5,7 @@ import Introduction from './components/Introduction';
 import Aboutme from './components/Aboutme'
 import Portfolio from './components/Portfolio';
 import VisibleComponents from './components/VisibleComponents';
-import Contact from './components/Contact';
+import Contact from './components/contact';
 
 function App() {
   return (
