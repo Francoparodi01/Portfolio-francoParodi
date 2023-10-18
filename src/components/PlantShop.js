@@ -11,8 +11,14 @@ const plantShop = () => {
               </div>
             </div>
             <div>
-                <h2 className='titulos-proyectos'>E-commerce de plantas</h2>
-                    <p className='aboutme-text'>la idea en este texto es explicar el funcionamiento de la pagina, el tiempo que me llevo construirla y como está compuesta
+                <h2 className='titulos-proyectos'>Discord clon</h2>
+                    <p className='aboutme-text'>
+                      Iniciando con un login seguro utilizando clerk, desarrollando la app con typescript, tailwind y next.js. 
+                      Para la gestión de datos en el backend, elegí SQL como nuestra base de datos y Prisma como nuestro ORM, 
+                      lo que hizo que la comunicación entre la base de datos y la aplicación fuera más eficiente.
+                      La aplicacion cuenta con chat en tiempo real gracias a socket.io, manejo y subida de archivos (imagenes, pdf, etc) 
+                      gracias a Uploadthing; canales de texto, audio y video funcionales, conversaciones y videollamadas entre usuarios, 
+                      link de invitacion a servidores funcionales, manejo de usuarios, modo nocturno y diseño responsive. 
                     </p>
             </div>
         </div>
