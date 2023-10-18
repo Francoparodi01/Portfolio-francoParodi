@@ -6,7 +6,7 @@ import ProyectoSkins from './ProyectoSkins'
 
 const Portfolio = (isVisible) => {
   return (
-    <section className='aboutme-section'>
+    <section className='aboutme-section' id='portfolio'>
     <VisibleComponents id="section-cont" className={`section-cont ${isVisible ? 'animate' : ''}`}>
     <div>     
          <div className='section-cont'>

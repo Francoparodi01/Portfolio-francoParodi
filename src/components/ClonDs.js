@@ -19,6 +19,14 @@ const plantShop = () => {
                       La aplicacion cuenta con chat en tiempo real gracias a socket.io, manejo y subida de archivos (imagenes, pdf, etc) 
                       gracias a Uploadthing; canales de texto, audio y video funcionales, conversaciones y videollamadas entre usuarios, 
                       link de invitacion a servidores funcionales, manejo de usuarios, modo nocturno y diseño responsive. 
+                      <ul>
+                        <li>
+                          <a className='repositorio-proyectos' href='https://github.com/Francoparodi01/DiscordClone'> Link al repositorio</a>
+                        </li>
+                        <li>
+                          <a className='repositorio-proyectos' href='https://discordclone-production-df7d.up.railway.app'>Deploy</a>
+                        </li>
+                      </ul>
                     </p>
             </div>
         </div>

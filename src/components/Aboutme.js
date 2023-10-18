@@ -6,7 +6,7 @@ import documento from '../pdf/cv-FrancoParodi.pdf'
 const Aboutme = ({isVisible}) => {
   
   return (
-    <section className='section'>
+    <section className='section' id="sobre-mi">
     <VisibleComponents id="section-cont" className={`section-cont ${isVisible ? 'animate' : ''}`}>
       <div className='section-cont'>
         <h2 className='section-title'>Sobre mí</h2>
@@ -17,10 +17,17 @@ const Aboutme = ({isVisible}) => {
             </div>
             <div>
                 <h2>Hola! Soy Franco Parodi,</h2>
-                    <p className='aboutme-text'>Desarrollador frontend y estudiante de la carrera de Ingeniería en Informática en la UBA. Mi principal objetivo es el aprendizaje constante, 
-                      siempre buscando mejorar mis habilidades y conocimientos. Desde muy joven, he sentido una gran pasión por la tecnología, y también he desarrollado un interés por el diseño, 
-                      lo cual me ha llevado a tomar cursos de Photoshop e Illustrator. Si estás interesado en conocer más sobre mi trayectoria y experiencia, te invito a 
-                      <a href={documento} className='curriculum'> hacer clic aquí</a> para acceder a mi currículum.</p>
+                <p className='aboutme-text'>
+                  un apasionado desarrollador fullstack con un enfoque en la creación de web-components.
+                  Mi viaje en el mundo de la programación comenzó con cursos en JavaScript, React y backend, y actualmente,
+                  estoy cursando el primer año de Ingeniería Informática en la Universidad de Buenos Aires. 
+                  Durante mis estudios, he tenido la oportunidad de trabajar con lenguajes como Python y pronto exploraré Java.
+                  Mi verdadero amor es la programación web, donde descubrí el potencial de lenguajes como JavaScript y TypeScript. 
+                  React capturó mi atención de inmediato, y desde entonces, he avanzado a Next.js, lo que ha mejorado significativamente mi experiencia con React. 
+                  Estoy entusiasmado por las posibilidades infinitas que ofrece el desarrollo web y la creación de aplicaciones interactivas y atractivas.
+                  Si deseas conocer más acerca de mi trayectoria y experiencia, te invito a hacer clic en el siguiente enlace para acceder a mi 
+                    <a href={documento} className='curriculum'> Currículum</a>.
+                </p>
             </div>
         </div>
     </VisibleComponents>
