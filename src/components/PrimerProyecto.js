@@ -18,6 +18,14 @@ const PrimerProyecto = () => {
               una sección filtrada por categorías y, finalmente, las tarjetas con cada producto respectivo y la pasarela de pago. 
               El objetivo de este proyecto fue aprender a utilizar el framework y comprender sus funcionalidades. 
               A lo largo del curso, que duró desde septiembre hasta diciembre de 2022, fui creando sus componentes, utilizando rutas y Firebase como base de datos.
+              <ul>
+                <li>
+                  <a className='repositorio-proyectos' href='https://github.com/Francoparodi01/EntregableReact'> Link al repositorio</a>
+                </li>
+                <li>
+                  //*<a className='repositorio-proyectos' href='https://discordclone-production-df7d.up.railway.app'>Deploy</a>
+                </li>
+              </ul>
             </p>
        </div>
     </div>
