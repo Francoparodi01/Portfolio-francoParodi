@@ -1,5 +1,5 @@
 import React from 'react'
-import previewPlantas from '../assets/previewPlantas.png'
+import previewDiscord from '../assets/previewPlantas.png'
 
 const plantShop = () => {
   return (
@@ -7,7 +7,7 @@ const plantShop = () => {
         <div className='aboutme-cont aboutme-grid'>
             <div className='img-section-cont'>
               <div className='container-img-preview'>
-                <img src={previewPlantas} alt='gif e-commerce plantas' className='img-preview'></img>
+                <img src={previewDiscord} alt='gif e-commerce plantas' className='img-preview'></img>
               </div>
             </div>
             <div>
