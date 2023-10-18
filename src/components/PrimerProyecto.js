@@ -22,9 +22,6 @@ const PrimerProyecto = () => {
                 <li>
                   <a className='repositorio-proyectos' href='https://github.com/Francoparodi01/EntregableReact'> Link al repositorio</a>
                 </li>
-                <li>
-                  //*<a className='repositorio-proyectos' href='https://discordclone-production-df7d.up.railway.app'>Deploy</a>
-                </li>
               </ul>
             </p>
        </div>
