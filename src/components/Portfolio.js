@@ -3,6 +3,7 @@ import VisibleComponents from './VisibleComponents'
 import ClonDs from './ClonDs'
 import PrimerProyecto from './PrimerProyecto'
 import ProyectoSkins from './ProyectoSkins'
+import GymApp from './GymApp'
 
 const Portfolio = (isVisible) => {
   return (
@@ -18,6 +19,7 @@ const Portfolio = (isVisible) => {
           <PrimerProyecto/>
           <ProyectoSkins/>
           <ClonDs/>
+          <GymApp/>
       </div>
     </VisibleComponents>
    </section>
