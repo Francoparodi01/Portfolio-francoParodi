@@ -13,7 +13,7 @@ const ContactLogo = () => {
               <a href='https://github.com/Francoparodi01' className='contact-item' id='head-item'><AiFillGithub/></a>
             </li>
             <li>
-              <a href='https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSDXXrmlzJTTmGmpSTzBRmDxJLngdmsDQTLNWLWzwHmPCZsLmxJqPqSTvNHxBqfSVbwFqNnM'><SiGmail color='red' className='ml-3'/></a>
+              <a href='https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSDXXrmlzJTTmGmpSTzBRmDxJLngdmsDQTLNWLWzwHmPCZsLmxJqPqSTvNHxBqfSVbwFqNnM'><SiGmail className='ml-3 contact-item'/></a>
             </li>
         </ul>   
     </div>
