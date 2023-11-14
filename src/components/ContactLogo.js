@@ -13,7 +13,9 @@ const ContactLogo = () => {
               <a href='https://github.com/Francoparodi01' className='contact-item' id='head-item'><AiFillGithub/></a>
             </li>
             <li>
-              <a href='https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSDXXrmlzJTTmGmpSTzBRmDxJLngdmsDQTLNWLWzwHmPCZsLmxJqPqSTvNHxBqfSVbwFqNnM'><SiGmail className='ml-3 contact-item'/></a>
+              <a href='https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSDXXrmlzJTTmGmpSTzBRmDxJLngdmsDQTLNWLWzwHmPCZsLmxJqPqSTvNHxBqfSVbwFqNnM' className='contact-item'>
+                <SiGmail className='ml-3'/>
+              </a>
             </li>
         </ul>   
     </div>
