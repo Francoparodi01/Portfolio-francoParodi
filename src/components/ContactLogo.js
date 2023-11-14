@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import {SiGmail} from "react-icons/si"
 
 const ContactLogo = () => {
   return (
@@ -10,6 +11,9 @@ const ContactLogo = () => {
             </li>
             <li>
               <a href='https://github.com/Francoparodi01' className='contact-item' id='head-item'><AiFillGithub/></a>
+            </li>
+            <li>
+              <a href='https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSDXXrmlzJTTmGmpSTzBRmDxJLngdmsDQTLNWLWzwHmPCZsLmxJqPqSTvNHxBqfSVbwFqNnM'><SiGmail color='red' className='ml-3'/></a>
             </li>
         </ul>   
     </div>
