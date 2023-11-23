@@ -29,6 +29,10 @@
     border-radius: 10px;
   }
 }
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Inicio keyframes */
 
 @keyframes wave {
@@ -219,6 +223,8 @@
 }
 .aboutme-text{
   text-indent: 2rem;
+  text-align: justify;
+  
 }
 
 #link-home{
