@@ -54,7 +54,7 @@ const ClonDs = () => {
                           <a className='repositorio-proyectos' href='https://github.com/Francoparodi01/DiscordClone'> Link al repositorio</a>
                         </li>
                         <li>
-                          <a className='repositorio-proyectos' href='https://discordclone-production-df7d.up.railway.app'>Deploy</a>
+                          <a className='repositorio-proyectos' href='https://discord-clone-indol-five.vercel.app/sign-in?redirect_url=https%3A%2F%2Fdiscord-clone-indol-five.vercel.app%2F'>Deploy</a>
                         </li>
                       </ul>
                     </p>
