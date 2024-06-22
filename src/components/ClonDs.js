@@ -1,16 +1,11 @@
 import React from 'react'
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ImgClonDs from '../assets/previewDiscord.png'
 import discordCreateServer from '../assets/discordCreateServer.png'
 import discordInvite from '../assets/discordInvite.png'
 import manageMembers from '../assets/manageMembers.png'
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/autoplay';
-import 'swiper/css/effect-fade'
 
 const ClonDs = () => {
   return (
@@ -20,16 +15,13 @@ const ClonDs = () => {
             <div className='img-section-cont'>
               <div className='container-img-preview'>
               <Swiper
-                     modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
+                     modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
                      spaceBetween={50}
                      slidesPerView={1}
                      navigation
                      autoplay
                      fadeEffect
-                     pagination={{ clickable: true }}
-                     scrollbar={{ draggable: true }}
                      effect="fade"
-                     onSwiper={(swiper) => console.log(swiper)}
                      onSlideChange={() => console.log('slide change')}
                      className='img-preview'
                   >

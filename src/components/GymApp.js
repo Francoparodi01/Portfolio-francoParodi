@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import gymImg1 from '../assets/gymApp1.png'
 import gymImg2 from '../assets/gymApp2.png'
@@ -20,7 +20,7 @@ const gym_app = () => {
         <div className='img-section-cont'>
           <div className='container-img-preview'>
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
             navigation
