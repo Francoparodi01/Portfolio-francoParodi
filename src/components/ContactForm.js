@@ -45,7 +45,7 @@ const ContactForm = () => {
     });
 
     return (
-        <form onSubmit={formik.handleSubmit} className='form-contacto'>
+        <form onSubmit={formik.handleSubmit} className='form-contacto' id='contacto'>
             <label htmlFor="name" className='label-form'>Nombre</label>
             <input
                 id="name"

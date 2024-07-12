@@ -1,7 +1,7 @@
 import React from 'react'
 import fotoCv from '../assets/fotoPortfolio.png'
 import VisibleComponents from './VisibleComponents'
-import documento from '../pdf/cv_franco_parodi.pdf'
+import documento from '../pdf/FRANCO_PARODI_CV_ES.pdf'
 
 const Aboutme = ({isVisible}) => {
   
