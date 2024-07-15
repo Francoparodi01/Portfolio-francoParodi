@@ -13,8 +13,19 @@ import discordCreateServer from "../assets/discordCreateServer.png";
 import discordInvite from "../assets/discordInvite.png";
 import manageMembers from "../assets/manageMembers.png";
 import "swiper/css";
+import TecnoProyecto from "../utils/TecnoProyecto";
 
 const ClonDs = () => {
+
+  const tecnologiasParaMostrar = {
+    typescript: true,
+    react: true,
+    next: true,
+    tailwind: true,
+    prisma: true,
+    sql: true,
+  };
+
   return (
     <>
       <div className="aboutme-cont aboutme-grid">
@@ -71,10 +82,7 @@ const ClonDs = () => {
         </div>
         <div>
           <h2 className="titulos-proyectos">Discord clon</h2>
-          <ul className="contenedor-tecnologias-usadas">
-            <li className="typescript">TypeScript</li> <li>next.js</li>
-            <li>tailwind</li> <li>Prisma</li> <li></li>
-          </ul>
+          <TecnoProyecto mostrarTecnologias={tecnologiasParaMostrar}/>
           <p className="aboutme-text">
             Esta aplicación es un clon de Discord, diseñada para facilitar la
             comunicación en tiempo real entre usuarios. Permite la interacción a
@@ -85,13 +93,13 @@ const ClonDs = () => {
             invitación a servidores funcionales. Además, cuenta con modo
             nocturno y está diseñada para ser responsive, asegurando una
             experiencia de usuario fluida en diferentes dispositivos.
-            <ul>
+            <ul
+            >
               <li>
                 <a
                   className="repositorio-proyectos"
                   href="https://github.com/Francoparodi01/DiscordClone"
                 >
-                  {" "}
                   Link al repositorio
                 </a>
               </li>
