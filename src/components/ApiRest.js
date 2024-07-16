@@ -17,9 +17,19 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
+import TecnoProyecto from "../utils/TecnoProyecto";
 
 const ApiRest = () => {
-  return (
+  
+  const mostrarTecnologias = {
+    mongo: true,
+    typescript: true,
+    express: true,
+    node:true,
+    fetchapi:false,
+  }
+
+  return(
     <>
       <div className="aboutme-cont aboutme-grid">
         <div className="img-section-cont">
@@ -71,6 +81,7 @@ const ApiRest = () => {
         </div>
         <div>
           <h2 className="titulos-proyectos">API REST</h2>
+          <TecnoProyecto mostrarTecnologias={mostrarTecnologias}/>
           <p className="aboutme-text">
             Este proyecto es una API REST desarrollada con Node.js, Express y
             TypeScript, utilizando MongoDB como base de datos. La aplicación

@@ -1,7 +1,6 @@
 import React from 'react';
 import VisibleComponents from './VisibleComponents';
 import ClonDs from './ClonDs';
-import PrimerProyecto from './PrimerProyecto';
 import ProyectoSkins from './ProyectoSkins';
 import GymApp from './GymApp';
 import ApiRest from './ApiRest';
@@ -15,7 +14,6 @@ const Portfolio = ({ isVisible }) => {
           <p className='subtitulo-portfolio'>Mi Portafolio de Desarrollador Web, explora mis proyectos personales</p>
         </div>
         <div>
-          <PrimerProyecto />
           <ProyectoSkins />
           <GymApp />
           <ApiRest />

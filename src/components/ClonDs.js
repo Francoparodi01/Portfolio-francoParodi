@@ -17,13 +17,13 @@ import TecnoProyecto from "../utils/TecnoProyecto";
 
 const ClonDs = () => {
 
-  const tecnologiasParaMostrar = {
+  const mostrarTecnologias = {
     typescript: true,
     react: true,
     next: true,
     tailwind: true,
     prisma: true,
-    sql: true,
+    sql: true
   };
 
   return (
@@ -82,7 +82,7 @@ const ClonDs = () => {
         </div>
         <div>
           <h2 className="titulos-proyectos">Discord clon</h2>
-          <TecnoProyecto mostrarTecnologias={tecnologiasParaMostrar}/>
+          <TecnoProyecto mostrarTecnologias={mostrarTecnologias}/>
           <p className="aboutme-text">
             Esta aplicación es un clon de Discord, diseñada para facilitar la
             comunicación en tiempo real entre usuarios. Permite la interacción a
@@ -93,26 +93,23 @@ const ClonDs = () => {
             invitación a servidores funcionales. Además, cuenta con modo
             nocturno y está diseñada para ser responsive, asegurando una
             experiencia de usuario fluida en diferentes dispositivos.
-            <ul
-            >
-              <li>
+            </p>
+           
                 <a
                   className="repositorio-proyectos"
                   href="https://github.com/Francoparodi01/DiscordClone"
-                >
+                  >
                   Link al repositorio
                 </a>
-              </li>
-              <li>
+           
                 <a
                   className="repositorio-proyectos"
                   href="https://discord-clone-indol-five.vercel.app/sign-in?redirect_url=https%3A%2F%2Fdiscord-clone-indol-five.vercel.app%2F"
-                >
+                  >
                   Deploy
                 </a>
-              </li>
-            </ul>
-          </p>
+            
+              
         </div>
       </div>
     </>

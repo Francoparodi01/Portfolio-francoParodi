@@ -19,8 +19,18 @@
   /* Estilos generales */
   padding: 0;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Roboto Slab", serif;
   background: whitesmoke;
+
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-bg-color);
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 li{ list-style: none;}
@@ -146,9 +156,7 @@ li{ list-style: none;}
     width: 620px;
     height: 300px;
   }
-  .repositorio-proyectos:hover {
-    color: #824e80;
-  }
+  
 }
 
 /* Estilos Generales adicionales */
@@ -213,16 +221,12 @@ li{ list-style: none;}
   color: rgb(0, 0, 0);
   border-bottom: 1.5px solid #824e80;
   margin-bottom: 22px;
+  font-weight: bold;
 }
 
 .subtitulo-portfolio {
   margin-top: 25px;
   opacity: 0.7;
-}
-
-.repositorio-proyectos {
-  color: #b971d6;
-  margin-left: 10px;
 }
 
 .swiper-button-prev:after,
@@ -302,55 +306,96 @@ button:hover {
   display: flex; 
   align-items: center;
   gap: 30px;
-  margin: 10px;
+  margin: auto;
+  padding: auto;
 }
 
 
+.language {
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
 
-.typescript{
+
+.typescript {
   background-color: #3178C6;
-  color: white;
-  border-radius: 10px;
-  width: 10%;
-  text-align: center;
 }
-
-.next{
-  background-color: #25292e;
-  color: white;
-  border-radius: 10px;
-  width: 10%;
-  text-align: center;
-}
-
-.tailwind{
-  background-color: #38B2AC;
-  color: white;
-  border-radius: 10px;
-  width: 10%;
-  text-align: center;
-}
-
-.prisma {
-  background-color: #6D6A7E; 
-  color: white;
-  border-radius: 10px;
-  width: 10%;
-  text-align: center;
+.typescript:hover {
+  background-color: #265a91; 
 }
 
 .react {
-  background-color: #217FA8; 
-  color: white;
-  border-radius: 10px;
-  width: 10%;
-  text-align: center;
+  background-color: #5bb3cc;
+}
+.react:hover {
+  background-color: #12669b; 
+}
+
+.next {
+  background-color: #25292e;
+}
+.next:hover {
+  background-color: #1a1d21; 
+}
+
+.tailwind {
+  background-color: #38B2AC;
+}
+.tailwind:hover {
+  background-color: #2a8a87; 
+}
+
+.prisma {
+  background-color: #6D6A7E;
+}
+.prisma:hover {
+  background-color: #54525c; 
 }
 
 .sql {
-  background-color: #bd6717; 
-  color: white;
-  border-radius: 10px;
-  width: 10%;
-  text-align: center;
+  background-color: #c2640d;
+}
+.sql:hover {
+  background-color: #8e4d10; 
+}
+
+.mongo {
+  background-color: #00684a;
+}
+.mongo:hover {
+  background-color: #0a533f
+}
+
+.node{
+  background-color: #00cc83;
+  
+}
+.node:hover{
+background-color: #00a068;
+}
+
+.express{
+  background-color: #82c663 ;
+}
+.express:hover{
+  background-color: #5abd2d ;
+}
+
+.materialui{
+  background-color: #007fff;
+}
+.materialui:hover{
+  background-color: #0057ad;
+}
+
+.firebase{
+  background-color: #fdca40;
+}
+.firebase:hover{
+  background-color: #ecb41a;
 }
