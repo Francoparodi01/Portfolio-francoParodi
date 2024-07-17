@@ -12,10 +12,9 @@ import tracker1 from "../assets/tracker1.png";
 import tracker2 from "../assets/tracker2.png";
 import tracker3 from "../assets/tracker3.png";
 import "swiper/css";
-import TecnoProyecto from '../utils/TecnoProyecto'
+import TecnoProyecto from "../utils/TecnoProyecto";
 
 const ExpenseTracker = () => {
-
   const mostrarTecnologias = {
     react: true,
     express: true,
@@ -23,8 +22,7 @@ const ExpenseTracker = () => {
     chartjs: true,
     mongo: true,
     node: true,
-  }
-
+  };
 
   return (
     <>
@@ -76,39 +74,35 @@ const ExpenseTracker = () => {
         <div>
           <h2 className="titulos-proyectos">Gestor de gastos</h2>
           <ul className="contenedor-tecnologias-usadas">
-          <TecnoProyecto mostrarTecnologias={mostrarTecnologias}/>
+            <TecnoProyecto mostrarTecnologias={mostrarTecnologias} />
           </ul>
           <p className="aboutme-text">
-            Esta aplicación es un clon de Discord, diseñada para facilitar la
-            comunicación en tiempo real entre usuarios. Permite la interacción a
-            través de canales de texto, audio y video, así como el envío y
-            gestión de archivos como imágenes y PDFs mediante Uploadthing.
-            Incluye funcionalidades de chat en tiempo real gracias a Socket.io,
-            conversaciones y videollamadas entre usuarios, y enlaces de
-            invitación a servidores funcionales. Además, cuenta con modo
-            nocturno y está diseñada para ser responsive, asegurando una
-            experiencia de usuario fluida en diferentes dispositivos.
-            </p>
-              <ul>
-                <li>
-                  <a
-                    className="repositorio-proyectos"
-                    href="https://github.com/Francoparodi01/DiscordClone"
-                    target="blank"
-                  >
-                    Link al repositorio
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="repositorio-proyectos"
-                    href="https://expense-tracker-nine-cyan.vercel.app"
-                    target="blank"
-                  >
-                    Deploy
-                  </a>
-                </li>
-              </ul>
+            Aplicación web en la que puedes gestionar tus gastos de manera continua.
+            La misma posee un diagrama donde se pueden ver los gastos ingresados y tener 
+            de manera gráfica la evolucion de nuestros ingresos/gastos en una forma comparativa.
+            Puedes añadir tus ingresos, gastos, editar y eliminarlos, agregar los gastos
+            e ingresos por categoría para una mejor gestión de los mismos.
+          </p>
+          <ul>
+            <li>
+              <a
+                className="repositorio-proyectos"
+                href="https://github.com/Francoparodi01/DiscordClone"
+                target="blank"
+              >
+                Link al repositorio
+              </a>
+            </li>
+            <li>
+              <a
+                className="repositorio-proyectos"
+                href="https://expense-tracker-nine-cyan.vercel.app"
+                target="blank"
+              >
+                Deploy
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </>
