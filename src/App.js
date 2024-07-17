@@ -8,6 +8,7 @@ import VisibleComponents from './components/VisibleComponents';
 import Tecnologias from './components/Tecnologías'
 import 'swiper/css';
 import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Tecnologias/>
     <Portfolio/>
     <ContactForm/>
+    <Footer/>
     </VisibleComponents>
     </>
   );

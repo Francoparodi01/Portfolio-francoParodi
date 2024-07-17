@@ -4,6 +4,7 @@ import ClonDs from './ClonDs';
 import ProyectoSkins from './ProyectoSkins';
 import GymApp from './GymApp';
 import ApiRest from './ApiRest';
+import ExpenseTracker from './ExpenseTracker';
 
 const Portfolio = ({ isVisible }) => {
   return (
@@ -18,6 +19,7 @@ const Portfolio = ({ isVisible }) => {
           <GymApp />
           <ApiRest />
           <ClonDs />
+          <ExpenseTracker/>
         </div>
       </VisibleComponents>
     </section>

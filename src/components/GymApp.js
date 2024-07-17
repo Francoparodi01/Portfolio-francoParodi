@@ -19,6 +19,8 @@ const gym_app = () => {
   const mostrarTecnologias = {
     react: true,
     materialui: true,
+    apis: true,
+    javascript: true
   }
 
   return (
@@ -27,18 +29,22 @@ const gym_app = () => {
         <div className='img-section-cont'>
           <div className='container-img-preview'>
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
-            spaceBetween={50}
-            slidesPerView={1}
-            navigation
-            autoplay
-            fadeEffect
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            effect="fade"
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
-            className='img-preview'
+              modules={[
+                Navigation,
+                Pagination,
+                Scrollbar,
+                A11y,
+                EffectFade,
+                Autoplay,
+              ]}
+              spaceBetween={50}
+              slidesPerView={1}
+              navigation
+              autoplay
+              fadeEffect
+              effect="fade"
+              onSlideChange={() => console.log("slide change")}
+              className="img-preview"
           >
             <SwiperSlide ><img src={gymImg1} alt='gif e-commerce plantas' className='img-preview' ></img></SwiperSlide>
             <SwiperSlide ><img src={gymImg2} alt='gif e-commerce plantas' className='img-preview' ></img></SwiperSlide>
@@ -55,15 +61,15 @@ const gym_app = () => {
                 Desarrollé la aplicación con React.js y la maqueté al 100% de forma responsive utilizando Material UI.
                 La idea de la app era trabajar con fetch y APIs, y logré completar este desafío en un solo fin de semana! 
                 Las Tecnologías Utilizadas son:
-                  
-                    <li>
-                      <a className='repositorio-proyectos' href='https://github.com/Francoparodi01/GymApp'> Link al repositorio</a>
-                    </li>
-                    <li>
-                      <a className='repositorio-proyectos' href='https://gym-app-francoparodi.netlify.app'>Deploy</a>
-                    </li>
-                  
                 </p>
+                  <ul>
+                    <li>
+                      <a className='repositorio-proyectos' href='https://github.com/Francoparodi01/GymApp' target="blank"> Link al repositorio</a>
+                    </li>
+                    <li>
+                      <a className='repositorio-proyectos' href='https://gym-app-francoparodi.netlify.app' target="blank">Deploy</a>
+                    </li>
+                  </ul>
         </div>
     </div>
 </>

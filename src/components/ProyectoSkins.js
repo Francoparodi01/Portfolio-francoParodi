@@ -7,6 +7,7 @@ const ProyectoSkins = () => {
   const mostrarTecnologias = { 
     react: true,
     firebase: true, 
+    javascript: true,
   }
 
   return (
@@ -27,8 +28,8 @@ const ProyectoSkins = () => {
             y una pasarela de pago para una experiencia de compra completa.  
             </p>
               <ul class="project-links">
-                <li><a class="repositorio-proyectos" href="https://github.com/Francoparodi01/SkinsApp">Link al repositorio</a></li>
-                <li><a class="repositorio-proyectos" href="https://csgoskins-app.netlify.app">Deploy</a></li>
+                <li><a class="repositorio-proyectos" href="https://github.com/Francoparodi01/SkinsApp" target="blank">Link al repositorio</a></li>
+                <li><a class="repositorio-proyectos" href="https://csgoskins-app.netlify.app" target="blank">Deploy</a></li>
               </ul>
        </div>
     </div>

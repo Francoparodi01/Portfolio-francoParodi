@@ -48,10 +48,7 @@ const ApiRest = () => {
               navigation
               autoplay
               fadeEffect
-              pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
               effect="fade"
-              onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
               className="img-preview"
             >
@@ -104,6 +101,7 @@ const ApiRest = () => {
               <a
                 className="repositorio-proyectos"
                 href="https://github.com/Francoparodi01/API-REST"
+                target="blank"
               >
                 Link al repositorio
               </a>
