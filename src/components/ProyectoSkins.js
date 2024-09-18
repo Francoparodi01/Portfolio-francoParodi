@@ -1,3 +1,4 @@
+
 import React from 'react'
 import gifSkins from '../assets/gif-proyecto-skins.gif'
 import TecnoProyecto from '../utils/TecnoProyecto'

@@ -1,43 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-// Styled Components
-const StyledNavbar = styled(Navbar)`
-  background-color: #00339b; /* Color de fondo del Navbar */
-`;
-
-const StyledBrand = styled(Navbar.Brand)`
-  color: white; /* Color del texto de la marca */
-  font-weight: bold;
-  &:hover {
-    color: #ffcc00; /* Color al pasar el ratón */
-  }
-`;
-
-const StyledLink = styled(Nav.Link)`
-  color: white; /* Color del texto de los enlaces */
-  font-weight: 500;
-  &:hover {
-    color: #ffcc00; /* Color al pasar el ratón */
-  }
-`;
-
 const Header = () => {
-  return (
-    <StyledNavbar expand="lg" variant="dark">
-      <Container>
-        <StyledBrand href="#sobre-mi">Franco Parodi</StyledBrand>
-        <Nav className="me-auto">
-          <StyledLink href="#sobre-mi">Sobre mí</StyledLink>
-          <StyledLink href="#portfolio">Portfolio</StyledLink>
-          <StyledLink href="#contacto">Contacto</StyledLink>
-        </Nav>
-      </Container>
-    </StyledNavbar>
-  );
-};
+    
+    return (
+      <Navbar id='nav'>
+        <Container id='header'>
+          <Navbar.Brand href='#sobre-mi'>Franco Parodi</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link id='head-item' href="#sobre-mi">Sobre mí</Nav.Link>
+            <Nav.Link id='head-item' href='#portfolio'>Portfolio</Nav.Link>
+            <Nav.Link id='head-item' href='#contacto'>Contacto</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    )};
 
-export default Header;
+export default Header

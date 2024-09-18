@@ -1,12 +1,10 @@
 import React from 'react';
 import fotoCv from '../assets/fotoPortfolio.png';
-import VisibleComponents from './VisibleComponents';
 import documento from '../pdf/FRANCO_PARODI_CV_ES.pdf';
 
 const Aboutme = ({ isVisible }) => {
   return (
     <section className='section' id="sobre-mi">
-      <VisibleComponents id="section-cont" className={`section-cont ${isVisible ? 'animate' : ''}`}>
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
@@ -36,7 +34,6 @@ const Aboutme = ({ isVisible }) => {
             </div>
           </div>
         </div>
-      </VisibleComponents>
     </section>
   );
 };

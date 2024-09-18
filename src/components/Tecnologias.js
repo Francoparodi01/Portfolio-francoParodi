@@ -1,8 +1,9 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import styled from 'styled-components';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 import reactPng from '../assets/react.png';
 import js from '../assets/js.png';
@@ -13,137 +14,68 @@ import sql from '../assets/sql.png';
 import postgre from '../assets/postgre-logo.png';
 import ts from '../assets/typescript.png';
 
-// Estilos usando styled-components
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px 0;
-  padding: 0 10px; /* Añadido padding para evitar que el contenido toque los bordes en pantallas pequeñas */
-`;
-
-const Title = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #00339b; /* Color principal */
-  font-weight: bold;
-  text-align: center; /* Alineación centrada para pantallas más pequeñas */
-  
-  @media (max-width: 768px) {
-    font-size: 1.5rem; /* Reducido para pantallas más pequeñas */
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.2rem; /* Aún más pequeño para pantallas muy pequeñas */
-  }
-`;
-
-const TechnologySlide = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-`;
-
-const TechImage = styled.img`
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  margin-bottom: 15px;
-
-  @media (max-width: 768px) {
-    width: 100px; /* Reducido para pantallas más pequeñas */
-    height: 100px;
-  }
-
-  @media (max-width: 480px) {
-    width: 80px; /* Aún más pequeño para pantallas muy pequeñas */
-    height: 80px;
-  }
-`;
-
-const TechName = styled.p`
-  font-size: 1.1rem;
-  color: #333;
-  font-weight: 500;
-  margin: 0;
-
-  @media (max-width: 768px) {
-    font-size: 1rem; /* Reducido para pantallas más pequeñas */
-  }
-
-  @media (max-width: 480px) {
-    font-size: 0.9rem; /* Aún más pequeño para pantallas muy pequeñas */
-  }
-`;
-
-const Tecnologias = () => {
-  // Configuración del slider
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: false, // Puedes habilitar esto si necesitas flechas de navegación
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
+export default function App() {
   return (
-    <Container>
-      <Title>Tecnologías Principales</Title>
-      <Slider {...sliderSettings}>
-        <TechnologySlide>
-          <TechImage src={js} alt='JavaScript' />
-          <TechName>JavaScript</TechName>
-        </TechnologySlide>
-        <TechnologySlide>
-          <TechImage src={ts} alt='TypeScript' />
-          <TechName>TypeScript</TechName>
-        </TechnologySlide>
-        <TechnologySlide>
-          <TechImage src={reactPng} alt='React.js' />
-          <TechName>React.js</TechName>
-        </TechnologySlide>
-        <TechnologySlide>
-          <TechImage src={next} alt='Next.js' />
-          <TechName>Next.js</TechName>
-        </TechnologySlide>
-        <TechnologySlide>
-          <TechImage src={mongodb} alt='MongoDB' />
-          <TechName>MongoDB</TechName>
-        </TechnologySlide>
-        <TechnologySlide>
-          <TechImage src={prisma} alt='Prisma' />
-          <TechName>Prisma</TechName>
-        </TechnologySlide>
-        <TechnologySlide>
-          <TechImage src={sql} alt='MySQL' />
-          <TechName>MySQL</TechName>
-        </TechnologySlide>
-        <TechnologySlide>
-          <TechImage src={postgre} alt='PostgreSQL' />
-          <TechName>PostgreSQL</TechName>
-        </TechnologySlide>
-      </Slider>
-    </Container>
+    <>
+      <div className='contenedor-tecnologias'>
+        <h2>Tecnologías principales</h2>
+        <Swiper
+          modules={[Pagination, Navigation, Autoplay]}
+          slidesPerView={3}
+          autoplay={{ delay: 3000 }}
+          grabCursor={true}
+          spaceBetween={30}
+        >
+          <SwiperSlide>
+            <div className='tecnologia'>
+              <img className='img-tecnologias' src={js} alt='JavaScript' />
+              <p>JavaScript</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='tecnologia'>
+              <img className='img-tecnologias' src={ts} alt='Typescript' />
+              <p>Typescript</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='tecnologia'>
+              <img className='img-tecnologias' src={reactPng} alt='React.js' />
+              <p>React.js</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='tecnologia'>
+              <img className='img-tecnologias' src={next} alt='Next.js' />
+              <p>Next.js</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='tecnologia'>
+              <img className='img-tecnologias' src={mongodb} alt='Mongodb' />
+              <p>MongoDB</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='tecnologia'>
+              <img className='img-tecnologias' src={prisma} alt='Prisma' />
+              <p>Prisma</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='tecnologia'>
+              <img className='img-tecnologias' src={sql} alt='SQL' />
+              <p>MYSQL</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='tecnologia'>
+              <img className='img-tecnologias' src={postgre} alt='SQL' />
+              <p>POSTGRE SQL</p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </>
   );
-};
-
-export default Tecnologias;
+}
