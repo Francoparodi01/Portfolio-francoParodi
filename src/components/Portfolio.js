@@ -13,11 +13,11 @@ const Portfolio = ({ isVisible }) => {
           <p className='subtitulo-portfolio'>Mi Portafolio de Desarrollador Web, explora mis proyectos personales</p>
         </div>
         <div>
-          <ProyectoSkins />
-          <GymApp />
-          <ApiRest />
           <ClonDs />
+          <ApiRest />
+          <GymApp />
           <ExpenseTracker/>
+          <ProyectoSkins />
         </div>
     </section>
   );
