@@ -17,7 +17,6 @@ const Portfolio = ({ isVisible }) => {
           <ApiRest />
           <GymApp />
           <ExpenseTracker/>
-          <ProyectoSkins />
         </div>
     </section>
   );
