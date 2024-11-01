@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, { useRef } from 'react';
+import HeroSection from './components/HeroSection/HeroSection';
+import About from './components/about/About';
+import MySkills from './components/MySkills/MySkills';
+import MyProjects from './components/MyProjects/MyProjects';
 import './App.css';
+import Certificates from './components/Certificates/Certificates';
 
-function App() {
+const App = ({projectsRef}) => {
+  const aboutRef = useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeroSection/>
+      <MySkills/>
+      <MyProjects/>
+      <Certificates/>
+    </>
   );
-}
+};
 
 export default App;
