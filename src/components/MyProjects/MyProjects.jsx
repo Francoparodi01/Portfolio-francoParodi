@@ -16,7 +16,9 @@ const ProjectsContainer = styled(Box)(({ theme }) => ({
   height: '100vh',
   color: theme.palette.common.white,
   flexDirection: 'column',
-  alignContent: 'center',
+[theme.breakpoints.down('sm')]: {
+  marginTop: '.2em',
+},
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -34,7 +36,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
     boxShadow: '0 0 10px #000',
   },
   [theme.breakpoints.down('sm')]: {
-    marginRight: '10em',
+    marginRight: '2.5rem',
   },
 }));
 
@@ -78,6 +80,9 @@ const TechnologySection = styled(Box)(({ theme }) => ({
   textAlign: 'center',
   [theme.breakpoints.down('sm')]: {
     padding: '10px',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: '2.5rem',
   },
 }));
 

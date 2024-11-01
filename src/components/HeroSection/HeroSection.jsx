@@ -120,9 +120,7 @@ const HeroSection = () => {
       <GradientBackground>
         <HeroContainer>
           <Overlay />
-          <button onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}>
-            <ArrowIcon icon={faArrowDown}/>
-          </button>
+            <ArrowIcon icon={faArrowDown} onClick={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}/>
           <HeroContent>
             <Title component="h1">Hola! Soy Franco Parodi.</Title>
             <Subtitle component="h2">Estudiante de ingeniería informática, desarrollador full-stack</Subtitle>
